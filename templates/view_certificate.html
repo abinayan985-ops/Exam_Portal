@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Certificate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-purple-50 min-h-screen flex items-center justify-center p-6">
+
+    <div class="bg-white border-4 border-purple-300 rounded-xl shadow-lg p-10 max-w-3xl w-full text-center">
+
+        <h1 class="text-3xl font-bold text-purple-700 mb-6">
+            Certificate of Completion
+        </h1>
+
+        <p class="text-lg text-slate-600 mb-4">
+            This certificate is proudly presented to
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">
+            {{ attempt.user.username }}
+        </h2>
+
+        <p class="text-slate-600 mb-3">
+            For successfully completing the examination
+        </p>
+
+        <h3 class="text-xl font-semibold text-purple-700 mb-6">
+            {{ attempt.exam.title }}
+        </h3>
+
+        <p class="text-lg text-slate-700 mb-4">
+            Score: {{ attempt.score }}%
+        </p>
+
+        <p class="text-slate-500">
+            Status: {{ attempt.status }}
+        </p>
+
+        <button onclick="window.print()"
+            class="mt-8 bg-purple-600 text-white px-6 py-3 rounded-lg">
+            Print Certificate
+        </button>
+
+    </div>
+
+</body>
+</html>
