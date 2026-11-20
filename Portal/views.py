@@ -19,12 +19,12 @@ def login_view(request):
             login(request, user)
             return redirect('dashboard')
         else:
-            return render(request, 'login.html', {'error': 'Invalid username or password'})
+            return render(request, 'index.html', {'error': 'Invalid username or password'})
             
-    return render(request, 'login.html')
+    return render(request, 'index.html')
 def logout_view(request):
     logout(request)
-    return redirect('login')
+    return redirect('index')
 
 @login_required
 def dashboard_view(request):
