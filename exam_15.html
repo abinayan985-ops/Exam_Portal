@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam - English</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-emerald-300 via-teal-400 to-slate-700 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white rounded-3xl shadow-2xl max-w-5xl w-full p-6 md:p-8 flex flex-col md:flex-row gap-8">
+        
+        <!-- Left Side: Navigation & Timer -->
+        <div class="md:w-1/3 bg-gray-50 p-5 rounded-2xl border border-gray-100 flex flex-col justify-between">
+            <div>
+                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">Exam Navigation</h3>
+                <div class="grid grid-cols-5 gap-2 mb-6">
+                    <a href="#q_1" class="w-10 h-10 rounded-xl bg-white border border-gray-200 hover:bg-teal-500 hover:text-white flex items-center justify-center text-xs font-bold shadow-sm transition">1</a><a href="#q_2" class="w-10 h-10 rounded-xl bg-white border border-gray-200 hover:bg-teal-500 hover:text-white flex items-center justify-center text-xs font-bold shadow-sm transition">2</a><a href="#q_3" class="w-10 h-10 rounded-xl bg-white border border-gray-200 hover:bg-teal-500 hover:text-white flex items-center justify-center text-xs font-bold shadow-sm transition">3</a><a href="#q_4" class="w-10 h-10 rounded-xl bg-white border border-gray-200 hover:bg-teal-500 hover:text-white flex items-center justify-center text-xs font-bold shadow-sm transition">4</a><a href="#q_5" class="w-10 h-10 rounded-xl bg-white border border-gray-200 hover:bg-teal-500 hover:text-white flex items-center justify-center text-xs font-bold shadow-sm transition">5</a><a href="#q_6" class="w-10 h-10 rounded-xl bg-white border border-gray-200 hover:bg-teal-500 hover:text-white flex items-center justify-center text-xs font-bold shadow-sm transition">6</a><a href="#q_7" class="w-10 h-10 rounded-xl bg-white border border-gray-200 hover:bg-teal-500 hover:text-white flex items-center justify-center text-xs font-bold shadow-sm transition">7</a><a href="#q_8" class="w-10 h-10 rounded-xl bg-white border border-gray-200 hover:bg-teal-500 hover:text-white flex items-center justify-center text-xs font-bold shadow-sm transition">8</a><a href="#q_9" class="w-10 h-10 rounded-xl bg-white border border-gray-200 hover:bg-teal-500 hover:text-white flex items-center justify-center text-xs font-bold shadow-sm transition">9</a><a href="#q_10" class="w-10 h-10 rounded-xl bg-white border border-gray-200 hover:bg-teal-500 hover:text-white flex items-center justify-center text-xs font-bold shadow-sm transition">10</a>
+                </div>
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl border border-gray-200 text-center shadow-sm">
+                <i class="fa-regular fa-clock text-teal-600 mr-2"></i>
+                <span class="text-xs text-gray-500">Time left</span>
+                <div id="timer" class="text-lg font-bold text-gray-800">59:51</div>
+            </div>
+        </div>
+
+     
+        <div class="md:w-2/3 flex flex-col justify-between">
+            <form method="GET" action="result.html" class="flex flex-col h-full justify-between">
+                
+                <div>
+                    <div class="bg-slate-800 text-white p-6 rounded-2xl mb-6 shadow-md">
+                        <span class="text-xs text-teal-300 font-semibold tracking-wide uppercase">Question</span>
+                        <h2 class="text-xl font-bold mt-1">English</h2>
+                        <p class="text-xs text-slate-300 mt-1">Select one appropriate answer choice below.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        
+        <div id="q_1" class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+            <p class="font-semibold text-gray-800 text-sm mb-4">1. A person who loves books</p>
+            <div class="space-y-2 text-sm">
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_1" value="A"><span>A. Bibliophile</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_1" value="B"><span>B. Philanthropist</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_1" value="C"><span>C. Misanthrope</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_1" value="D"><span>D. Linguist</span></label>
+            </div>
+        </div>
+        <div id="q_2" class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+            <p class="font-semibold text-gray-800 text-sm mb-4">2. One who can speak two languages</p>
+            <div class="space-y-2 text-sm">
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_2" value="A"><span>A. Polyglot</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_2" value="B"><span>B. Bilingual</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_2" value="C"><span>C. Linguist</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_2" value="D"><span>D. Orator</span></label>
+            </div>
+        </div>
+        <div id="q_3" class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+            <p class="font-semibold text-gray-800 text-sm mb-4">3. A government by the people</p>
+            <div class="space-y-2 text-sm">
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_3" value="A"><span>A. Monarchy</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_3" value="B"><span>B. Autocracy</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_3" value="C"><span>C. Democracy</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_3" value="D"><span>D. Aristocracy</span></label>
+            </div>
+        </div>
+        <div id="q_4" class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+            <p class="font-semibold text-gray-800 text-sm mb-4">4. Someone who hates mankind</p>
+            <div class="space-y-2 text-sm">
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_4" value="A"><span>A. Misogynist</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_4" value="B"><span>B. Misanthrope</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_4" value="C"><span>C. Philanthropist</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_4" value="D"><span>D. Pessimist</span></label>
+            </div>
+        </div>
+        <div id="q_5" class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+            <p class="font-semibold text-gray-800 text-sm mb-4">5. A person who cannot read or write</p>
+            <div class="space-y-2 text-sm">
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_5" value="A"><span>A. Illiterate</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_5" value="B"><span>B. Ignorant</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_5" value="C"><span>C. Innocent</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_5" value="D"><span>D. Illegible</span></label>
+            </div>
+        </div>
+        <div id="q_6" class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+            <p class="font-semibold text-gray-800 text-sm mb-4">6. Fear of closed spaces</p>
+            <div class="space-y-2 text-sm">
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_6" value="A"><span>A. Acrophobia</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_6" value="B"><span>B. Claustrophobia</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_6" value="C"><span>C. Hydrophobia</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_6" value="D"><span>D. Xenophobia</span></label>
+            </div>
+        </div>
+        <div id="q_7" class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+            <p class="font-semibold text-gray-800 text-sm mb-4">7. A study of ancient things</p>
+            <div class="space-y-2 text-sm">
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_7" value="A"><span>A. Astrology</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_7" value="B"><span>B. Archaeology</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_7" value="C"><span>C. Anthropology</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_7" value="D"><span>D. Geology</span></label>
+            </div>
+        </div>
+        <div id="q_8" class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+            <p class="font-semibold text-gray-800 text-sm mb-4">8. One who eats too much</p>
+            <div class="space-y-2 text-sm">
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_8" value="A"><span>A. Glutton</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_8" value="B"><span>B. Herbivore</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_8" value="C"><span>C. Carnivore</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_8" value="D"><span>D. Omnivore</span></label>
+            </div>
+        </div>
+        <div id="q_9" class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+            <p class="font-semibold text-gray-800 text-sm mb-4">9. A person who looks on the bright side of things</p>
+            <div class="space-y-2 text-sm">
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_9" value="A"><span>A. Pessimist</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_9" value="B"><span>B. Cynic</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_9" value="C"><span>C. Optimist</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_9" value="D"><span>D. Realist</span></label>
+            </div>
+        </div>
+        <div id="q_10" class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+            <p class="font-semibold text-gray-800 text-sm mb-4">10. Words that cannot be read easily</p>
+            <div class="space-y-2 text-sm">
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_10" value="A"><span>A. Illegal</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_10" value="B"><span>B. Illegible</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_10" value="C"><span>C. Eligible</span></label>
+                <label class="flex items-center space-x-3 p-3 bg-white rounded-xl border border-gray-200 cursor-pointer hover:border-teal-500 transition"><input type="radio" name="q_10" value="D"><span>D. Audible</span></label>
+            </div>
+        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center mt-8 pt-4 border-t border-gray-100">
+                    <button type="button" class="px-6 py-2.5 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-600 text-sm font-semibold transition">Previous</button>
+                    <button type="submit" class="px-6 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold shadow-md transition">Submit Exam</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
+
