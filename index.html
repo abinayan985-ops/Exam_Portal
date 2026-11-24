@@ -171,17 +171,8 @@
                 Login
             </h3>
 
-            <!-- Django Error Message -->
-            {% if error %}
-                <div class="alert alert-danger text-center small">
-                    {{ error }}
-                </div>
-            {% endif %}
-
             <!-- Login Form -->
-            <form method="POST">
-
-                {% csrf_token %}
+            <form action="templates/dashboard.html">
 
                 <!-- Username -->
                 <div class="mb-3">
