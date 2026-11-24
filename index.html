@@ -171,8 +171,17 @@
                 Login
             </h3>
 
+            <!-- Django Error Message -->
+            
+                <div class="alert alert-danger text-center small">
+                    
+                </div>
+            
+
             <!-- Login Form -->
-            <form action="dashboard.html">
+            <form method="POST">
+
+                
 
                 <!-- Username -->
                 <div class="mb-3">
@@ -243,5 +252,17 @@
 
     </div>
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    if (form) {
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            window.location.href = "dashboard.html";
+        });
+    }
+});
+</script>
 </body>
 </html>
