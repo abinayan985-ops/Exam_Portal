@@ -28,7 +28,7 @@
                     <tr class="hover:bg-purple-50/50">
                         <td class="p-3 font-semibold text-slate-900"></td>
                         <td class="p-3"></td>
-                        <td class="p-3 text-purple-600 font-bold">%</td>
+                        <td class="p-3 text-purple-600 font-bold">4%</td>
                         <td class="p-3">
                             <a href="view_certificate.html" target="_blank" class="px-3 py-1.5 bg-purple-600 text-white text-xs font-semibold rounded-lg hover:bg-purple-700">
                                 <i class="fa-solid fa-file-contract mr-1"></i> View Certificate
@@ -44,5 +44,25 @@
             </table>
         </div>
     </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll("form").forEach(function(form) {
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const action = form.getAttribute("action");
+            if (action && action.endsWith(".html")) {
+                window.location.href = action;
+            } else if (window.location.pathname.includes("exam_page")) {
+                window.location.href = "result.html";
+            } else if (window.location.pathname.includes("add_question")) {
+                window.location.href = "questions.html";
+            } else {
+                window.location.href = "dashboard.html";
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>

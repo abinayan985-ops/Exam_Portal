@@ -23,7 +23,7 @@
                 class="w-full border rounded-lg p-3 mb-4">
             <option value="">Choose Exam</option>
             
-            <option value="">Python Programming</option>
+            <option value="">Physics Mechanics Test</option>
             
         </select>
 
@@ -70,5 +70,25 @@
     </form>
 </div>
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll("form").forEach(function(form) {
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const action = form.getAttribute("action");
+            if (action && action.endsWith(".html")) {
+                window.location.href = action;
+            } else if (window.location.pathname.includes("exam_page")) {
+                window.location.href = "result.html";
+            } else if (window.location.pathname.includes("add_question")) {
+                window.location.href = "questions.html";
+            } else {
+                window.location.href = "dashboard.html";
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>

@@ -255,13 +255,21 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("form");
-    if (form) {
+    document.querySelectorAll("form").forEach(function(form) {
         form.addEventListener("submit", function(e) {
             e.preventDefault();
-            window.location.href = "dashboard.html";
+            const action = form.getAttribute("action");
+            if (action && action.endsWith(".html")) {
+                window.location.href = action;
+            } else if (window.location.pathname.includes("exam_page")) {
+                window.location.href = "result.html";
+            } else if (window.location.pathname.includes("add_question")) {
+                window.location.href = "questions.html";
+            } else {
+                window.location.href = "dashboard.html";
+            }
         });
-    }
+    });
 });
 </script>
 </body>
